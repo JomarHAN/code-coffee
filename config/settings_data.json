@@ -1,0 +1,80 @@
+{
+  "current": {
+    "colors_accent_1": "#80411e",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Coffee Time ☕️",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Slate_Coffee.png",
+          "logo_width": 250,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "d06ce849-6826-484e-bd46-b9e86f6653e4": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Navigation",
+              "menu": "main-menu"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Info",
+              "menu": "footer"
+            }
+          },
+          "134d7360-5a86-4b15-a443-4cdeb0cd5db9": {
+            "type": "text",
+            "settings": {
+              "heading": "Code Coffee",
+              "subtext": "<p>📥  : 2455 Saint Francis Way, Eagleville, PA 19403<\/p><p><\/p><p>📞  : 267-243-5978<\/p><p><\/p><p>📧.  : hello@codecoffee.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "d06ce849-6826-484e-bd46-b9e86f6653e4",
+          "footer-0",
+          "134d7360-5a86-4b15-a443-4cdeb0cd5db9"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "4 Coffees Lovers ❤️",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}

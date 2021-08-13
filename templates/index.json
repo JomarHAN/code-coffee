@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Give Code Coffee a Try"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner_image_main.jpg",
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Favorite",
+        "collection": "coffee",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
+    "162888063281a79335": {
+      "type": "featured-blog",
+      "blocks": {
+        "162888063281a79335-0": {
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "162888063281a79335-1": {
+          "type": "summary",
+          "settings": {}
+        },
+        "162888063281a79335-2": {
+          "type": "link",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "162888063281a79335-0",
+        "162888063281a79335-1",
+        "162888063281a79335-2"
+      ],
+      "settings": {
+        "heading": "Learn more about coffee",
+        "blog": "news",
+        "post_limit": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "soft_background": false
+      }
+    },
+    "image_text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Coffee Club"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/product_pack-w.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "162888125977d7dba2": {
+      "type": "collage",
+      "blocks": {
+        "162888125977d7dba2-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Roasting-video.jpg",
+            "video_url": "https:\/\/player.vimeo.com\/video\/582023095?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "162888125977d7dba2-0"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
+    "162888169576fdc458": {
+      "type": "collage",
+      "blocks": {
+        "b2b5623f-fd91-487a-84b4-f3e47e2bc70f": {
+          "type": "product",
+          "settings": {
+            "product": "coffee-vietnam",
+            "secondary_background": false,
+            "second_image": true,
+            "image_padding": false
+          }
+        },
+        "86d3da07-16e7-4dba-a55b-cb98a21abdac": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage-section.png",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "5303420c-486c-4174-bdc6-c855e298400d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage-section.jpg",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "b2b5623f-fd91-487a-84b4-f3e47e2bc70f",
+        "86d3da07-16e7-4dba-a55b-cb98a21abdac",
+        "5303420c-486c-4174-bdc6-c855e298400d"
+      ],
+      "settings": {
+        "heading": "Coffee of the month ⭐️",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_products",
+    "162888063281a79335",
+    "image_text",
+    "162888125977d7dba2",
+    "162888169576fdc458"
+  ]
+}
