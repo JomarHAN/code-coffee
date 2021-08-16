@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "c554c566-f02d-48e9-8d03-04ba95455e7b": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "$90 + $10 (Brand New)"
+          }
+        },
+        "99095e7a-ebb1-4f97-b291-6b5098cd3a2d": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "3-5 business days"
+          }
+        },
+        "22a06378-21ca-42a6-a677-add74e168645": {
+          "type": "product_price_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "c554c566-f02d-48e9-8d03-04ba95455e7b",
+        "99095e7a-ebb1-4f97-b291-6b5098cd3a2d",
+        "22a06378-21ca-42a6-a677-add74e168645"
+      ],
+      "settings": {
+        "show_reviews": true
+      }
+    },
+    "second": {
+      "type": "main-test-product",
+      "blocks": {
+        "a2e84c82-fa82-4f4e-86bc-21d883ccd8ad": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "$90 + $5 (Used)"
+          }
+        },
+        "70109ee1-4e75-476a-b3c7-e8898e317ec5": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "1-2 business days"
+          }
+        }
+      },
+      "block_order": [
+        "a2e84c82-fa82-4f4e-86bc-21d883ccd8ad",
+        "70109ee1-4e75-476a-b3c7-e8898e317ec5"
+      ],
+      "settings": {
+        "show_reviews": false
+      }
+    },
+    "16291391084a9f9c83": {
+      "type": "image-with-text",
+      "blocks": {
+        "16291391084a9f9c83-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Feature"
+          }
+        },
+        "16291391084a9f9c83-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It's great!<\/p>"
+          }
+        },
+        "16291391084a9f9c83-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Like",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16291391084a9f9c83-0",
+        "16291391084a9f9c83-1",
+        "16291391084a9f9c83-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about_4.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "second",
+    "16291391084a9f9c83"
+  ]
+}
