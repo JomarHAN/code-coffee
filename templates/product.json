@@ -123,11 +123,47 @@
         "add_image_padding": false,
         "show_vendor": false
       }
+    },
+    "1629921745400ff7da": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "5466f584-663b-4a37-83de-eb5988e45f09": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/avatar.jpg",
+            "customer_name": "﻿Jomar Ng."
+          }
+        },
+        "a197b4fe-e1d8-4d69-b720-7e88a4aaac28": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>More recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/50494094_600636350387434_4597875035691024384_n.jpg",
+            "customer_name": "Nguyen Family"
+          }
+        },
+        "7dc019d5-5285-4fdd-8eb6-db4b819b2e4f": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<\/p>",
+            "customer_image": "shopify:\/\/shop_images\/126054595_753924521913436_7580270871086017467_n.jpg",
+            "customer_name": "Hong An"
+          }
+        }
+      },
+      "block_order": [
+        "5466f584-663b-4a37-83de-eb5988e45f09",
+        "a197b4fe-e1d8-4d69-b720-7e88a4aaac28",
+        "7dc019d5-5285-4fdd-8eb6-db4b819b2e4f"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "16298253784b82268b",
-    "1629830036371430a9"
+    "1629830036371430a9",
+    "1629921745400ff7da"
   ]
 }
