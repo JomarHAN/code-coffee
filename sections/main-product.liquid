@@ -6,6 +6,24 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
+<style>
+  table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        tr,td{
+            border: 1px solid lightgray;
+            padding: 10px;
+        }
+        .category{
+            font-weight: bold;
+        }
+        td svg{
+            width: 20px;
+            height: auto;
+        }
+</style>
+
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -94,21 +112,68 @@
                 {{ product.description }}
               </div>
             {%- endif -%}
-          {%- when 'collapsible_tab' -%}
+
+            {%- when 'collapsible_tab' -%}
+              <div class="product__accordion accordion">
+                <details>
+                  <summary>
+                    <div class="summary__title">
+                      {% render 'icon-accordion', icon: block.settings.icon %}
+                      <h2 class="h4 accordion__title">
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                      </h2>
+                    </div>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <div class="accordion__content rte">
+                    {{ block.settings.content }}
+                    {{ block.settings.page.content }}
+                  </div>
+                </details>
+              </div>
+
+          {%- when 'coffee_info' -%}
             <div class="product__accordion accordion">
               <details>
                 <summary>
                   <div class="summary__title">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    {% render 'icon-accordion', icon: 'leaf' %}
                     <h2 class="h4 accordion__title">
-                      {{ block.settings.heading | default: block.settings.page.title }}
+                      Coffee Info
                     </h2>
                   </div>
                   {% render 'icon-caret' %}
                 </summary>
                 <div class="accordion__content rte">
-                  {{ block.settings.content }}
-                  {{ block.settings.page.content }}
+                  <table>
+                    <tr>
+                        <td class="category">Taste</td>
+                        <td>{{block.settings.taste}}</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Strength</td>
+                        <td>
+                            {% assign strength = block.settings.strength | plus: 0 %}
+                            {% render 'coffee-indicator' , level_indicator: strength %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category">Acidity</td>
+                        <td>
+                          {% assign acidity = block.settings.acidity | plus: 0 %}
+                            {% render 'coffee-indicator' , level_indicator: acidity %}
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category">Type</td>
+                        <td>{{block.settings.type}}</td>
+                    </tr>
+                    <tr>
+                        <td class="category">Origin</td>
+                        <td>{{block.settings.origin}}</td>
+                    </tr>
+                </table>
                 </div>
               </details>
             </div>
@@ -560,6 +625,37 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "coffee_info",
+      "name": "Coffee Info",
+      "settings":[
+        {
+          "type": "text",
+          "id": "taste",
+          "label": "Taste"
+        },
+        {
+          "type": "text",
+          "id": "strength",
+          "label": "Strength"
+        },
+        {
+          "type": "text",
+          "id": "acidity",
+          "label": "Acidity"
+        },
+        {
+          "type": "text",
+          "id": "type",
+          "label": "Type"
+        },
+        {
+          "type": "text",
+          "id": "origin",
+          "label": "Origin"
         }
       ]
     },

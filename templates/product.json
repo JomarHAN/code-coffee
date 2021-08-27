@@ -48,6 +48,25 @@
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "c97e9706-1732-41cb-a0b6-c475a6399171": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Times",
+            "content": "<p>{{ product.metafields.my_fields.shipping.value }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        },
+        "3b1ff71a-3008-485d-b2ab-4f7c43af3c20": {
+          "type": "coffee_info",
+          "settings": {
+            "taste": "{{ product.metafields.my_fields.taste.value }}",
+            "strength": "{{ product.metafields.my_fields.strength.value }}",
+            "acidity": "{{ product.metafields.my_fields.acidity.value }}",
+            "type": "{{ product.metafields.my_fields.type.value }}",
+            "origin": "{{ product.metafields.my_fields.origin.value }}"
+          }
         }
       },
       "block_order": [
@@ -59,7 +78,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "c97e9706-1732-41cb-a0b6-c475a6399171",
+        "3b1ff71a-3008-485d-b2ab-4f7c43af3c20"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -158,12 +179,17 @@
         "7dc019d5-5285-4fdd-8eb6-db4b819b2e4f"
       ],
       "settings": {}
+    },
+    "1630005545a2327fd4": {
+      "type": "metafields",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "16298253784b82268b",
     "1629830036371430a9",
-    "1629921745400ff7da"
+    "1629921745400ff7da",
+    "1630005545a2327fd4"
   ]
 }
